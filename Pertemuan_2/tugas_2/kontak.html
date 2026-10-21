@@ -1,15 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek - Portofolio Mahasiswa</title>
+    <meta charset=""UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Modul 2 - Form Kontak</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Daftar Proyek Saya</h1>
+        <h1>Formulir Kontak</h1>
 
         <nav>
             <ul>
@@ -25,62 +25,47 @@
 
     <main>
         <section>
-            <h2>Proyek Akademik</h2>
-
-            <article>
-                <h3>1. Portofolio Mahasiswa</h3>
-                <p>Kategori: Pengembangan Web</p>
-                <p>Teknologi: HTML</p>
+            <h2>Kirimkan Pesan atau Penawaran Proyek</h2>
+            <form>
                 <p>
-                    Membuat website portofolio dengan beberapa
-                    halaman untuk menampilkan profil,
-                    keahlian, proyek, dan kontak.
+                    <label for="nama_pengirim">Nama Lengkap Anda:</Fikri Juan Septriana><br>
+                    <input type="text" id="nama_pengirim" name="nama_pengirim">
                 </p>
-            </article>
 
-            <hr>
-
-            <article>
-                <h3>2. Sistem Informasi Perpustakaan</h3>
-                <p>Kategori: Analisis dan Perancangan Sistem</p>
                 <p>
-                    Merancang sistem informasi untuk membantu
-                    pengelolaan koleksi buku, data anggota,
-                    dan transaksi peminjaman.
+                    <label for="email_pengirim">Alamat Email:</fikrifj5@gmail.com><br>
+                    <input type="email" id="email_pengirim" name="email_pengirim">
                 </p>
-            </article>
 
-            <hr>
+                <p> 
+                    <label for="jenis_layanan">Layanan yang Dibutuhkan:</label><br> 
+                    <select id="jenis_layanan" name="jenis_layanan"> 
+                        <option value="">-- Pilih Layanan --</option> 
+                        <option value="web">Pembuatan Web</option> 
+                        <option value="app">Pengembangan Aplikasi</option> 
+                        <option value="other">Lain-lain</option> 
+                    </select> 
+                </p> 
 
-            <article>
-                <h3>3. Perhitungan Transaksi Kasir</h3>
-                <p>Kategori: Pemrograman</p>
                 <p>
-                    Merancang program sederhana untuk menghitung
-                    jumlah belanja, total pembayaran,
-                    dan diskon transaksi.
+                    <label for="pesan">Pesan:</label><br> 
+                    <textarea id="pesan" name="pesan" rows="6" cols="50"></textarea>
                 </p>
-            </article>
-        </section>
 
-        <hr>
+                <p>
+                    <button type="submit">Kirim Pesan</button> 
+                    <button type="reset">Batal / Reset</button> 
+                </p>
 
-        <section>
-            <h2>Pengembangan Selanjutnya</h2>
-            <p>
-                Proyek-proyek ini dapat dikembangkan lebih lanjut
-                dengan menambahkan CSS, JavaScript, database,
-                dan fitur sesuai kebutuhan.
-            </p>
-        </section>
-    </main>
+            </form> 
+        </section> 
+    </main> 
 
-    <hr>
+    <hr> 
 
-    <footer>
-        <p>&copy; 2026 Portofolio Mahasiswa.</p>
+    <footer> 
+        <p>&copy; 2026 Teknik Informatika ITG</p> 
         <a href="index.html">Kembali ke Beranda</a>
     </footer>
-
 </body>
 </html>
